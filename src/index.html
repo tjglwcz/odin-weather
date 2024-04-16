@@ -6,6 +6,42 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Odin Weather</title>
   </head>
-  <body></body>
+  <body class="bg-blue-100 flex flex-col h-screen">
+    <div class="w-full flex justify-center py-4">
+      <form action="/" class="flex gap-2">
+        <input
+          type="text"
+          name="formInput"
+          id="formInput"
+          placeholder="Enter a city"
+          class="p-2 rounded-lg"
+        />
+        <button
+          type="submit"
+          class="hover:transition-all duration-300 px-4 py-2 bg-blue-400 hover:bg-blue-500 hover:shadow-sm rounded-lg"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      class="w-full h-full flex justify-center items-center"
+      id="infoContainer"
+    >
+      <div class="min-h-64 min-w-96 bg-slate-50 p-4 rounded-lg shadow-md">
+        <h1 class="text-center text-4xl py-2" id="cityDisplay"></h1>
+        <p class="text-center py-2 text-gray-600" id="conditionDisplay"></p>
+        <p class="text-center py-2 font-semibold text-8xl" id="tempDisplay"></p>
+        <p
+          class="text-center py-2 text-2xl text-gray-600"
+          id="feelsDisplay"
+        ></p>
+        <p
+          class="text-center py-2 text-2xl text-gray-600"
+          id="humidityDisplay"
+        ></p>
+      </div>
+    </div>
+  </body>
   <script src="./index.js"></script>
 </html>
